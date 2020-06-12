@@ -148,7 +148,6 @@ FORCE_INLINE __m512d _mm512_div_pd(__m512d a, __m512d b)
     res_m512d.vect_f64[1] = vdivq_f64(a.vect_f64[1], b.vect_f64[1]);
     res_m512d.vect_f64[2] = vdivq_f64(a.vect_f64[2], b.vect_f64[2]);
     res_m512d.vect_f64[3] = vdivq_f64(a.vect_f64[3], b.vect_f64[3]);
-
     return res_m512d;
 }
 
