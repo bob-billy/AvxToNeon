@@ -571,7 +571,7 @@ FORCE_INLINE __m512i _mm512_subsetb_epi32 (__m512i v2, __m512i v3, __mmask16 *bo
     res.vect_s32[1] = vsubq_s32(v2.vect_s32[1], v3.vect_s32[1]);
     res.vect_s32[2] = vsubq_s32(v2.vect_s32[2], v3.vect_s32[2]);
     res.vect_s32[3] = vsubq_s32(v2.vect_s32[3], v3.vect_s32[3]);
-    carry.vect_u32[0] = vcltq_u32(v2.vect_u32[0], v3.vect_u32[0]);
+    //carry.vect_u32[0] = vcltq_u32(v2.vect_u32[0], v3.vect_u32[0]);
     carry.vect_u32[1] = vcltq_u32(v2.vect_u32[1], v3.vect_u32[1]);
     carry.vect_u32[2] = vcltq_u32(v2.vect_u32[2], v3.vect_u32[2]);
     carry.vect_u32[3] = vcltq_u32(v2.vect_u32[3], v3.vect_u32[3]);
